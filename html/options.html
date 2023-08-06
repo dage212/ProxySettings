@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proxy Settings</title>
+    <link rel="stylesheet" href="../css/devtools_page.css">
+</head>
+<style>
+
+</style>
+<body>
+    <div class="container">
+        <div class="container_left">
+            <div class="left_box">
+                <div class="title">拦截请求配置</div>
+                <label>拦截地址：</label><input class="input" type="text" placeholder="请输入地址" id="request"/>
+            </div>
+            <div class="x-axis-line" draggable="true">
+                <div class="inner_line"></div>
+            </div>
+            <div class="right_box">
+                <div class="title">代理请求配置</div>
+                <label>代理服务器地址：</label><input class="input" type="text" placeholder="请输入地址" id="url"/>
+            </div>
+        </div>
+        <div class="y-axis-line" draggable="true">
+            <div class="inner_line"></div>
+        </div>
+        <div class="container_right">
+            <div class="request_header_name" style="height: 30px;line-height: 30px;background-color: #f4f4f4;padding-left: 4px;">
+                请求Headers
+            </div>
+            <div id="request_header_box">
+    sdfsdfsfd
+            </div>
+            <div class="request_body_name" style="height: 30px;line-height: 30px;background-color: #f4f4f4;padding-left: 4px;">
+                请求Payload
+            </div>
+            <div id="request_body_box">
+    
+            </div>
+            <div class="request_response_name" style="height: 30px;line-height: 30px;background-color: #f4f4f4;padding-left: 4px;">
+                响应Response
+            </div>
+            <div id="request_response_box">
+    
+            </div>
+        </div>
+    </div>
+    <script src="../js/devtools_page.js"></script>
+
+</body>
+</html>

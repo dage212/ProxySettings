@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proxy Settings</title>
+    <link rel="stylesheet" href="../css/devtools_page.css">
+</head>
+<style>
+
+</style>
+<body>
+    <div class="container">
+        <div class="container_left">
+            <div class="left_box">
+                <div class="title">拦截请求配置</div>
+                <div class="title_item">
+                    <label>拦截地址：</label><input class="input" type="text" placeholder="请输入http/https开头地址" id="proxy_url"/>
+                </div>
+                <div class="title_item">
+                    <label>请求方式：</label><input class="input" type="text" placeholder="请输入拦截请求方式" id="proxy_method"/>
+                </div>
+            </div>
+            <div class="x-axis-line" draggable="true">
+                <div class="inner_line"></div>
+            </div>
+            <div class="right_box">
+                <div class="title">代理请求配置</div>
+                <label>代理服务器地址：</label><input class="input" type="text" placeholder="请输入http/https地址" id="localhost_url"/>
+            </div>
+        </div>
+        <div class="y-axis-line" draggable="true">
+            <div class="inner_line"></div>
+        </div>
+        <div class="container_right">
+            <div class="header_title">
+                请求Url
+            </div>
+            <div id="request_url_box">
+                <div class="row-box">
+                    <div class="row-box-label">Request URL:</div>
+                    <div class="row-box-content" id="url"></div>
+                </div>
+                <div class="row-box">
+                    <div class="row-box-label">Request Method:</div>
+                    <div class="row-box-content" id="method"></div></div>
+                <div class="row-box">
+                    <div class="row-box-label">Request Payload:</div>
+                    <div class="row-box-content" id="payload"></div></div>
+                <div class="row-box">
+                    <div class="row-box-label">Remote Address:</div>
+                    <div class="row-box-content" id="remote_address"></div>
+                </div>
+            </div>
+            <div class="header_title">
+                请求Headers
+            </div>
+            <div id="request_header_box">
+            </div>
+            <div class="header_title">
+                请求Payload
+            </div>
+            <div id="request_body_box">
+            </div>
+            <div class="header_title">
+                响应Response
+            </div>
+            <div id="request_response_box">
+            </div>
+            <div class="header_title">
+                拦截反馈
+            </div>
+            <div id="proxy_response">
+            </div>
+        </div>
+    </div>
+    <script src="../js/devtools_page.js"></script>
+
+</body>
+</html>

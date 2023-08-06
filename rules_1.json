@@ -1,0 +1,8 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": { "type": "redirect", "redirect": {"url":"http://localhost:3000/" }},
+    "condition": { "urlFilter": "https://api.apifox.cn/api/v1/*", "resourceTypes": ["main_frame","xmlhttprequest"] }
+  }   
+]
